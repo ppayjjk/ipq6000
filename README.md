@@ -38,6 +38,6 @@ make menuconfig
 #导出为diffconfig
 ./scripts/diffconfig.sh > diffconfig
 ```
-## 找到diffcofig复制里面的内容替换项目根目录的config文件，不需要无线替换pro.config需要无线替换prowifi.config。
+## 找到diffcofig,复制里面的内容替换项目根目录的config文件，不需要无线替换pro.config需要无线替换prowifi.config。
 # 点亮你fork项目右上角的星星触发编译。编译结束后固件在Actions-点击运行任务-下方OpenWrt下载即可。
 # 结束
