@@ -33,11 +33,11 @@ wget https://github.com/ppayjjk/ipq6000/blob/main/pro/.config
 ```
 make menuconfig
 ```
-##插件在luci-applications里，主题在luci-Themes里，看到想要的按Y键打上*号“save”保存esc退出即可
+## 插件在luci-applications里，主题在luci-Themes里，看到想要的按Y键打上*号“save”保存esc退出即可
 ```
 #导出为diffconfig
 ./scripts/diffconfig.sh > diffconfig
 ```
-##找到diffcofig复制里面的内容替换项目根目录的config文件，不需要无线替换pro.config需要无线替换prowifi.config。
-#点亮你fork项目右上角的星星触发编译。编译结束后固件在Actions-点击运行任务-下方OpenWrt下载即可。
-#结束
+## 找到diffcofig复制里面的内容替换项目根目录的config文件，不需要无线替换pro.config需要无线替换prowifi.config。
+# 点亮你fork项目右上角的星星触发编译。编译结束后固件在Actions-点击运行任务-下方OpenWrt下载即可。
+# 结束
