@@ -124,7 +124,7 @@ jobs:
     - name: Build firmware
       working-directory: ./openwrt
       run: |
-        make -j2 V=s
+        make -j1 V=s
 
     - name : Upload artifact
       uses: actions/upload-artifact@master
