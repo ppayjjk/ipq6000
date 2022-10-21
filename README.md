@@ -10,8 +10,9 @@
 3. 定时重启
 4. DDNS
 5. kms
-6. 网易云解锁
-7. ipv6
+6. upnp
+7. 网易云解锁
+8. ipv6
 
 
 # 增加插件教程，fork项目（需要你有liux环境vps也行首选ubuntu或者debian）
