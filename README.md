@@ -42,8 +42,7 @@ make menuconfig
 ```
 ## 找到diffcofig,复制里面的内容替换项目根目录的config文件，不需要无线替换pro.config需要无线替换prowifi.config。!!!替换内容不要动名字
 
-## 点击打开项目.github/workflows文件夹找到你想要编译的运行文件需要wifi ipq6000.yml不需要wifi ipq6000-pro-wifi.yml点击打开。
-## 找到#watch:和#types: [started]删除前面的#号，提交更改。
+## 点击打开项目.github/workflows文件夹找到你想要编译的运行文件需要wifi ipq6000.yml不需要wifi ipq6000-pro-wifi.yml点击打开。找到#watch:和#types: [started]删除前面的#号，提交更改。
 
 ## 点亮你fork项目右上角的星星触发编译。编译结束后固件在Actions-点击运行任务-下方OpenWrt下载即可。
 # 结束
