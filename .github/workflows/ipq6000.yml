@@ -6,7 +6,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: ax18
+name: ipq6000-pro
 
 on: 
   release:
@@ -108,7 +108,7 @@ jobs:
 
     - name: Configuration Customization - ax18
       env:
-        CONFIG_FILE: 'ax18.config'
+        CONFIG_FILE: 'pro.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         #chmod +x ./customize.sh && ./customize.sh
