@@ -13,10 +13,31 @@
 7. ipv6
 
 
-# 增加插件教程（首先需要你有liux环境vps也行首选ubuntu或者debian）
+# 增加插件教程，fork项目（需要你有liux环境vps也行首选ubuntu或者debian）
 
 ## 克隆源码并添加package包
-‘‘‘git clone https://github.com/coolsnowwolf/openwrt-gl-ax1800.git ipq6000
-   cd ipq6000
-   sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
-   ’’’
+```
+git clone https://github.com/coolsnowwolf/openwrt-gl-ax1800.git ipq6000
+cd ipq6000
+sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
+./scripts/feeds update -a && ./scripts/feeds install -a
+```
+```
+#需要wifi
+wget https://raw.githubusercontent.com/ppayjjk/ipq6000/main/wifi/.config
+```
+```
+#不需要WiFi
+wget https://github.com/ppayjjk/ipq6000/blob/main/pro/.config
+```
+```
+make menuconfig
+```
+##插件在luci-applications里，主题在luci-Themes里，看到想要的按Y键打上*号“save”保存esc退出即可
+```
+#导出为diffconfig
+./scripts/diffconfig.sh > diffconfig
+```
+##找到diffcofig复制里面的内容替换项目根目录的config文件，不需要无线替换pro.config需要无线替换prowifi.config。
+#点亮你fork项目右上角的星星触发编译。编译结束后固件在Actions-点击运行任务-下方OpenWrt下载即可。
+#结束
