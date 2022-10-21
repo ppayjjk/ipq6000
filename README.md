@@ -30,7 +30,7 @@ wget https://raw.githubusercontent.com/ppayjjk/ipq6000/main/wifi/.config
 ```
 ```
 #不需要WiFi
-wget https://github.com/ppayjjk/ipq6000/blob/main/pro/.config
+wget https://raw.githubusercontent.com/ppayjjk/ipq6000/main/pro/.config
 ```
 ```
 make menuconfig
