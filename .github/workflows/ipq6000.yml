@@ -75,10 +75,20 @@ jobs:
         
     - name: Update path
       run: |
-        cd openwrt/target/linux/ipq60xx/files-4.4/arch/arm64/boot/dts/qcom/
-        rm -rf qcom-ipq6000-cpu-opp.dtsi
-        wget https://raw.githubusercontent.com/lauren12133/OpenWrt-Build/main/ax18cpupath/qcom-ipq6000-cpu-opp.dtsi
-        cat qcom-ipq6000-cpu-opp.dtsi
+        cat openwrt/target/linux/ipq60xx/files-4.4/arch/arm64/boot/dts/qcom/qcom-ipq6000-cpu-opp.dtsi
+        echo "cpu freq"    
+        
+        cat openwrt/target/linux/ipq60xx/Makefile
+        echo "drv-bridge-mgr"
+        
+        cat openwrt/package/network/services/dnsmasq/files/dhcp.conf
+        echo "aaaa"
+        
+        cat openwrt/package/kernel/linux/files/sysctl-nf-conntrack.conf
+        echo "65535"
+        
+        cat openwrt/package/qca/qca-nss-ecm/files/qca-nss-ecm.init
+        echo "1>0"
         
     - name: Update & Install feeds
       working-directory: ./openwrt
