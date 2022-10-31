@@ -75,6 +75,8 @@ jobs:
         
     - name: Update path
       run: |
+        curl https://raw.githubusercontent.com/lauren12133/OpenWrt-Build/main/ax18cpupath/path.sh | bash
+        
         cat openwrt/target/linux/ipq60xx/files-4.4/arch/arm64/boot/dts/qcom/qcom-ipq6000-cpu-opp.dtsi
         echo "cpu freq"    
         
