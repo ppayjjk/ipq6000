@@ -70,7 +70,6 @@ jobs:
     - name: Update feeds.conf.default
       run: |
         cd openwrt
-        sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
         git clone https://github.com/nixonli/ddns-scripts_dnspod.git package/ddns-scripts_dnspod
         
     - name: Update path
