@@ -16,7 +16,7 @@
 8. ipv6
 
 
-# 增加插件教程，fork项目（需要你有liux环境vps也行首选ubuntu或者debian）
+# 增加插件教程，fork项目（需要你有liux环境vps也行首选ubuntu或者debian）  依赖make请先安装 apt install make -y
 
 ## 拉取源码配置config！！！需科学上网环境！！！！
 ```
