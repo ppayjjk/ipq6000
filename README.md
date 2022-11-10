@@ -18,20 +18,14 @@
 
 # 增加插件教程，fork项目（需要你有liux环境vps也行首选ubuntu或者debian）
 
-## 克隆源码并添加package包
-```
-git clone https://github.com/coolsnowwolf/openwrt-gl-ax1800.git ipq6000
-cd ipq6000
-sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
-./scripts/feeds update -a && ./scripts/feeds install -a
-```
+## 拉取源码配置config！！！需科学上网环境！！！！
 ```
 #需要wifi
-wget https://raw.githubusercontent.com/ppayjjk/ipq6000/main/wifi/.config
+curl https://raw.githubusercontent.com/ppayjjk/ipq6000/main/wifi/wifi.sh | bash
 ```
 ```
 #不需要WiFi
-wget https://raw.githubusercontent.com/ppayjjk/ipq6000/main/pro/.config
+curl https://raw.githubusercontent.com/ppayjjk/ipq6000/main/pro/pro.sh | bash
 ```
 ```
 make menuconfig
