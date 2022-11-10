@@ -21,11 +21,11 @@
 ## 拉取源码配置config！！！需科学上网环境！！！！
 ```
 #需要wifi
-curl https://raw.githubusercontent.com/ppayjjk/ipq6000/main/wifi/wifi.sh | bash
+bash <(curl -L -s https://raw.githubusercontent.com/ppayjjk/ipq6000/main/wifi/wifi.sh)
 ```
 ```
 #不需要WiFi
-curl https://raw.githubusercontent.com/ppayjjk/ipq6000/main/pro/pro.sh | bash
+bash <(curl -L -s https://raw.githubusercontent.com/ppayjjk/ipq6000/main/pro/pro.sh)
 ```
 ## 插件在luci-applications里，主题在luci-Themes里，看到想要的按Y键打上*号“save”保存esc退出即可
 ```
