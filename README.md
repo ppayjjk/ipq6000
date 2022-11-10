@@ -27,9 +27,6 @@ curl https://raw.githubusercontent.com/ppayjjk/ipq6000/main/wifi/wifi.sh | bash
 #不需要WiFi
 curl https://raw.githubusercontent.com/ppayjjk/ipq6000/main/pro/pro.sh | bash
 ```
-```
-make menuconfig
-```
 ## 插件在luci-applications里，主题在luci-Themes里，看到想要的按Y键打上*号“save”保存esc退出即可
 ```
 #导出为diffconfig
