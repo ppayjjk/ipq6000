@@ -62,8 +62,8 @@ jobs:
 
     - name: Clone source code
       env: 
-        REPO_URL: https://github.com/coolsnowwolf/openwrt-gl-ax1800.git
-        REPO_BRANCH: master
+        REPO_URL: https://github.com/sdf8057/ipq6000.git
+        REPO_BRANCH: main
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         
@@ -75,22 +75,10 @@ jobs:
     - name: Update path
       run: |
         cd openwrt
-        curl https://raw.githubusercontent.com/lauren12133/OpenWrt-Build/main/ax18cpupath/path.sh | bash
+        #curl https://raw.githubusercontent.com/lauren12133/OpenWrt-Build/main/ax18cpupath/path.sh | bash
         
         cat target/linux/ipq60xx/files-4.4/arch/arm64/boot/dts/qcom/qcom-ipq6000-cpu-opp.dtsi
         echo "cpu freq"    
-        
-        cat target/linux/ipq60xx/Makefile
-        echo "drv-bridge-mgr"
-        
-        cat package/network/services/dnsmasq/files/dhcp.conf
-        echo "aaaa"
-        
-        cat package/kernel/linux/files/sysctl-nf-conntrack.conf
-        echo "65535"
-        
-        cat package/qca/qca-nss-ecm/files/qca-nss-ecm.init
-        echo "1>0"
         
     - name: Update & Install feeds
       working-directory: ./openwrt
